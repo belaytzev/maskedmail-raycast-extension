@@ -1,0 +1,46 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "fastmail-masked-email",
+  "title": "FastMail Masked Email",
+  "description": "Manage FastMail masked emails directly from Raycast. Create, list, enable, and disable masked emails with quick clipboard access. Requires maskedemail-cli.",
+  "icon": "icon.png",
+  "author": "Aleksei Beliaitsev",
+  "categories": ["Applications", "Productivity"],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "create-masked-email",
+      "title": "Create Masked Email",
+      "description": "Create and copy a new masked email address",
+      "mode": "view"
+    },
+    {
+      "name": "list-masked-emails",
+      "title": "List Masked Emails",
+      "description": "List all masked emails (press Enter to copy)",
+      "mode": "view"
+    },
+    {
+      "name": "enable-masked-email",
+      "title": "Enable Masked Email",
+      "description": "Enable a masked email address",
+      "mode": "view"
+    },
+    {
+      "name": "disable-masked-email",
+      "title": "Disable Masked Email",
+      "description": "Disable a masked email address",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "token",
+      "type": "password",
+      "required": true,
+      "title": "FastMail Token",
+      "description": "Your FastMail API token (requires Masked Email permission)",
+      "placeholder": "Enter your FastMail API token"
+    }
+  ]
+}
